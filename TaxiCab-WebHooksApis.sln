@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-WebHooksApis", "TaxiCab-WebHooksApis\TaxiCab-WebHooksApis.csproj", "{1085A284-18E1-4063-A5CE-96B2B96DADD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-WebHooksApis.Tests", "TaxiCab-WebHooksApis.Tests\TaxiCab-WebHooksApis.Tests.csproj", "{B73C2927-806E-47B4-B700-EA0F52DA69C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxyCab-Models", "TaxyCab-Models\TaxyCab-Models.csproj", "{988CB56E-4BEA-4B40-9E24-C96321B510DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-SlqReporsitory", "TaxiCab-SlqReporsitory\TaxiCab-SlqReporsitory.csproj", "{90EE42A4-1BE4-4C5A-912E-5DC2A336323B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxyCab-VehicleDeriver", "TaxyCab-VehicleDeriver\TaxyCab-VehicleDeriver.csproj", "{1CEF2ECC-93BC-4FC2-AC1B-4728301D1C14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-Client", "TaxiCab-Client\TaxiCab-Client.csproj", "{589B8949-2DBA-4E1B-986F-83A043235598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1085A284-18E1-4063-A5CE-96B2B96DADD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1085A284-18E1-4063-A5CE-96B2B96DADD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1085A284-18E1-4063-A5CE-96B2B96DADD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1085A284-18E1-4063-A5CE-96B2B96DADD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73C2927-806E-47B4-B700-EA0F52DA69C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73C2927-806E-47B4-B700-EA0F52DA69C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73C2927-806E-47B4-B700-EA0F52DA69C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73C2927-806E-47B4-B700-EA0F52DA69C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988CB56E-4BEA-4B40-9E24-C96321B510DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988CB56E-4BEA-4B40-9E24-C96321B510DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988CB56E-4BEA-4B40-9E24-C96321B510DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988CB56E-4BEA-4B40-9E24-C96321B510DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90EE42A4-1BE4-4C5A-912E-5DC2A336323B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90EE42A4-1BE4-4C5A-912E-5DC2A336323B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90EE42A4-1BE4-4C5A-912E-5DC2A336323B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90EE42A4-1BE4-4C5A-912E-5DC2A336323B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CEF2ECC-93BC-4FC2-AC1B-4728301D1C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEF2ECC-93BC-4FC2-AC1B-4728301D1C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEF2ECC-93BC-4FC2-AC1B-4728301D1C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEF2ECC-93BC-4FC2-AC1B-4728301D1C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{589B8949-2DBA-4E1B-986F-83A043235598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{589B8949-2DBA-4E1B-986F-83A043235598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{589B8949-2DBA-4E1B-986F-83A043235598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{589B8949-2DBA-4E1B-986F-83A043235598}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BC1F7EA4-ACD3-4618-B951-F4E6ABEC59ED}
+	EndGlobalSection
+EndGlobal
