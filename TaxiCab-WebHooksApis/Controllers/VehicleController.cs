@@ -12,7 +12,7 @@ using TaxiCab_WebHooksApi.Repository;
 
 namespace TaxiCab_WebHooksApi.Controllers
 {
-
+    [Authorize]
     public class VahicleController : ApiController
     {
         ITaxiCabVehicleRepository repository;
