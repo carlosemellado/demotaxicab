@@ -38,11 +38,11 @@ namespace TaxiCab_WebHooksApi.Tests
                     new Location { datetime = DateTime.Now, latitud = $"{latitud}", longitud = $"{longitud}" }
                 }
             };
-            VahicleController autenticationController = new VahicleController(repository);
-            autenticationController.Request = new HttpRequestMessage();
-            autenticationController.Request.SetConfiguration(new HttpConfiguration());
-            var result = autenticationController.UpdateLocation(updateLocationModel);
-
+            VahicleController vehicleController = new VahicleController(repository);
+            vehicleController.Request = new HttpRequestMessage();
+            vehicleController.Request.SetConfiguration(new HttpConfiguration());
+            var result = vehicleController.UpdateLocation(updateLocationModel);
+            
         }
 
 
@@ -51,10 +51,12 @@ namespace TaxiCab_WebHooksApi.Tests
         {
             var updateLocationModel = new GetLocationModel
             {
-                vehicle = new Vehicle { vehicleId = "XXX-XXX" }
+                vehicle = new Vehicle { vehicleId = "AAA-AAA" }
             };
-            VahicleController autenticationController = new VahicleController(repository);
-            var result = autenticationController.GetLocations(updateLocationModel);
+            VahicleController vehicleController = new VahicleController(repository);
+            vehicleController.Request = new HttpRequestMessage();
+            vehicleController.Request.SetConfiguration(new HttpConfiguration());
+            var result = vehicleController.GetLocations(updateLocationModel);
 
         }
     }

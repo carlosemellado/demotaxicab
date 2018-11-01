@@ -31,7 +31,9 @@ namespace TaxiCab_WebHooksApi.Controllers
         [HttpGet]
         public HttpResponseMessage GetLocations(GetLocationModel request)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, repository.GetLocations(request.vehicle,out request));
+            var resultado = repository.GetLocations(request.vehicle, out request);
+
+            return Request.CreateResponse(HttpStatusCode.OK, new { resultado= resultado, data = request });
         }
     }
 

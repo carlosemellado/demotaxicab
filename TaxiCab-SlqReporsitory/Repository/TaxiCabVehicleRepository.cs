@@ -91,10 +91,9 @@ namespace TaxiCab_WebHooksApi.Repository
                 DbDataReader reader=  command.ExecuteReader(CommandBehavior.CloseConnection);
                 while (reader.Read()) {
 
-                    object datetime = reader["datetime"];
-                    object location = reader["location"];
-
-                    modelTem.locations.Add(new Location());
+                    DateTime datetime = Convert.ToDateTime(reader["datetime"]);
+                    string[] location = Convert.ToString(reader["location"]).Split(' ');
+                    modelTem.locations.Add(new Location() { datetime =  datetime, latitud= location[0], longitud=location[1] });
                 }
                 model = modelTem;
                 return new ResultTransactionModel() { numAffactedRows = null, Description = null };
