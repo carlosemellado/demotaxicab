@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{589B8949-2DBA-4E1B-986F-83A043235598}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TaxiCab_Client</RootNamespace>
+    <RootNamespace>TaxiCab_NotificationService</RootNamespace>
     <AssemblyName>TaxiCab-Client</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace TaxiCab_Client
+namespace TaxiCab_NotificationService
 {
 
     class Program

@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-SlqReporsitory", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxyCab-VehicleDeriver", "TaxyCab-VehicleDeriver\TaxyCab-VehicleDeriver.csproj", "{1CEF2ECC-93BC-4FC2-AC1B-4728301D1C14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-Client", "TaxiCab-Client\TaxiCab-Client.csproj", "{589B8949-2DBA-4E1B-986F-83A043235598}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiCab-NotificationService", "TaxiCab-Client\TaxiCab-NotificationService.csproj", "{589B8949-2DBA-4E1B-986F-83A043235598}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

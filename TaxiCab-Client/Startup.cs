@@ -3,7 +3,7 @@ using System.Web.Http.Tracing;
 using Microsoft.AspNet.WebHooks.Controllers;
 using Owin;
 
-namespace TaxiCab_Client
+namespace TaxiCab_NotificationService
 {
     public class Startup
     {

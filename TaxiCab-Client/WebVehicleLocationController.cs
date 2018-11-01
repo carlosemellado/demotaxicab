@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Text;
 using System.Web.Http;
 
-namespace Receiver
+namespace TaxiCab_NotificationService
 {
     [RoutePrefix("api/webhook")]
     public class WebVehicleLocationController : ApiController
