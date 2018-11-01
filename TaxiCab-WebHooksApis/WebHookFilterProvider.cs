@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Microsoft.AspNet.WebHooks;
+using TaxyCab_Models.Constans;
 
 namespace WebApiHost
 {
@@ -30,9 +31,8 @@ namespace WebApiHost
         {
             filters = new Collection<WebHookFilter>
             {
-                new WebHookFilter { Name = "AAA-AAA", Description = "VEHICLELOCATION"},
-                new WebHookFilter { Name = "BBB-BBB", Description = "VEHICLELOCATION"},
-                new WebHookFilter { Name = "VVV-002", Description = "VEHICLELOCATION"}
+                new WebHookFilter { Name = TaxiCabUtil.VEHICLELOCATION, Description = "Notificaciones para ubicaciones de vehiculos"},
+                new WebHookFilter { Name = TaxiCabUtil.PANICBUTTON, Description = "Notificaciones para problemas durante el viaje"},
             };
         }
 

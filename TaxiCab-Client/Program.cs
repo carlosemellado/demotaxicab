@@ -34,9 +34,9 @@ namespace TaxiCab_NotificationService
                 var registration = new
                 {
                     WebHookUri = $"{uriClient}/api/webhook",
-                    Description = "VEHICLELOCATION",
+                   // Description = "XXX-AAA",
                     Secret = "12345678901234567890123456789012",
-                    Filters = new List<string> { "AAA-AAA" }
+                    Filters = new List<string> { "VEHICLELOCATION" }
                 };
                 // Register our webhook using the custom controller
                 result = httpClient.PostAsJsonAsync($"{uriWebHooksApis}/api/webhooks/registrations", registration).Result;

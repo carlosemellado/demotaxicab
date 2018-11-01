@@ -41,16 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Constans\WebHookFilte.cs" />
     <Compile Include="Models\AcceptJourneyModel.cs" />
     <Compile Include="Models\Entitys\Client.cs" />
     <Compile Include="Models\Entitys\Driver.cs" />
     <Compile Include="Models\Entitys\Journey.cs" />
     <Compile Include="Models\Entitys\Location.cs" />
     <Compile Include="Models\Entitys\User.cs" />
+    <Compile Include="Models\Entitys\Insident.cs" />
     <Compile Include="Models\Entitys\Vehicle.cs" />
     <Compile Include="Models\RequestJourneyModel.cs" />
     <Compile Include="Models\ResultTransactionModel.cs" />
+    <Compile Include="Models\InsidenModel.cs" />
     <Compile Include="Models\UpdateLocationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

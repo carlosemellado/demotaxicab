@@ -9,6 +9,7 @@ using System.Web.Http.Dependencies;
 using System.Web.Security;
 using TaxiCab_WebHooksApi.Models;
 using TaxiCab_WebHooksApi.Repository;
+using TaxyCab_Models.Constans;
 
 namespace TaxiCab_WebHooksApi.Controllers
 {
@@ -23,7 +24,7 @@ namespace TaxiCab_WebHooksApi.Controllers
         [Route("api/vehicle/updatelocation")]
         public HttpResponseMessage UpdateLocation(UpdateLocationModel request)
         {
-            var result = this.NotifyAllAsync(request.vehicle.vehicleId, new { Message = request } );
+            var result = this.NotifyAsync(TaxiCabUtil.VEHICLELOCATION, new { Message = request } );
             return Request.CreateResponse(HttpStatusCode.OK, repository.UpdateLocation(request));
         }
         [HttpPost]
