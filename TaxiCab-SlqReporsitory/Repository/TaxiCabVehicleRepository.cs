@@ -103,5 +103,37 @@ namespace TaxiCab_WebHooksApi.Repository
                 conn.Close();
             }
         }
+
+        public ResultTransactionModel GetCurrentLocation(Vehicle vehicle, out GetLocationModel model)
+        {
+            try
+            {
+                GetLocationModel modelTem = new GetLocationModel();
+                modelTem.locations = new List<Location>();
+                conn.Open();
+                var command = conn.CreateCommand();
+                command.CommandText = "[GetVehicleCurrentlocation]";
+                command.CommandType = CommandType.StoredProcedure;
+                DbParameter vehicleId = command.CreateParameter();
+                vehicleId.ParameterName = "@vehicleId";
+                vehicleId.Value = vehicle.vehicleId;
+                command.Parameters.Add(vehicleId);
+                DbDataReader reader = command.ExecuteReader(CommandBehavior.CloseConnection);
+                while (reader.Read())
+                {
+
+                    DateTime datetime = Convert.ToDateTime(reader["datetime"]);
+                    string[] location = Convert.ToString(reader["location"]).Split(' ');
+                    modelTem.locations.Add(new Location() { datetime = datetime, latitud = location[0], longitud = location[1] });
+                }
+                model = modelTem;
+                return new ResultTransactionModel() { numAffactedRows = null, Description = null };
+            }
+            finally
+            {
+
+                conn.Close();
+            }
+        }
     }
 }

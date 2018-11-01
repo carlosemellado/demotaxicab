@@ -27,7 +27,7 @@ namespace TaxiCab_WebHooksApi.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, repository.UpdateLocation(request));
         }
         [HttpPost]
-        [Route("api/vehicle/getlocations")]
+        [Route("api/vehicle/gethistorylocations")]
         [HttpGet]
         public HttpResponseMessage GetLocations(GetLocationModel request)
         {
@@ -35,6 +35,20 @@ namespace TaxiCab_WebHooksApi.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, new { resultado= resultado, data = request });
         }
+
+
+        [HttpPost]
+        [Route("api/vehicle/getcurrentlocation")]
+        [HttpGet]
+        public HttpResponseMessage GetCurrectLocation(GetLocationModel request)
+        {
+            var resultado = repository.GetCurrentLocation(request.vehicle, out request);
+
+            return Request.CreateResponse(HttpStatusCode.OK, new { resultado = resultado, data = request });
+        }
+
+
+       
     }
 
 

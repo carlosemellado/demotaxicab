@@ -11,5 +11,9 @@ namespace TaxiCab_WebHooksApi.Repository
         ResultTransactionModel UpdateLocation(UpdateLocationModel model);
 
         ResultTransactionModel GetLocations(Vehicle vehicle, out GetLocationModel model);
+
+        ResultTransactionModel GetCurrentLocation(Vehicle vehicle, out GetLocationModel model);
+
+        
     }
 }

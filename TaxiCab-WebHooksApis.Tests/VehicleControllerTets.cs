@@ -59,5 +59,20 @@ namespace TaxiCab_WebHooksApi.Tests
             var result = vehicleController.GetLocations(updateLocationModel);
 
         }
+
+
+        [TestMethod]
+        public void GetCurrentLocationTest()
+        {
+            var updateLocationModel = new GetLocationModel
+            {
+                vehicle = new Vehicle { vehicleId = "AAA-AAA" }
+            };
+            VahicleController vehicleController = new VahicleController(repository);
+            vehicleController.Request = new HttpRequestMessage();
+            vehicleController.Request.SetConfiguration(new HttpConfiguration());
+            var result = vehicleController.GetCurrectLocation(updateLocationModel);
+
+        }
     }
 }
