@@ -7,6 +7,8 @@ namespace TaxiCab_WebHooksApi.Models
 {
     public class Location
     {
+        public object datetime;
+
         public string latitud { get; set; }
         public string longitud { get; set; }
         public string contryCode { get; set; }

@@ -3,12 +3,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TaxiCab_WebHooksApi.Tests
 {
+
+    // TODO: implement test methods 
     [TestClass]
-    public class UnitTest1
+    public class JourneyControllerTest
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-        }
+       
     }
 }

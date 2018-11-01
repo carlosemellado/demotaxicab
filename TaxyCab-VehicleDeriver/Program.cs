@@ -26,10 +26,9 @@ namespace TaxyCab_VehicleDeriver
                 using (var httpClient = new HttpClient())
                 {
 
-
-
+                    HttpResponseMessage result = httpClient.PostAsJsonAsync($"{uriWebHooksApis}/api/journey/auth/signin", new { name = "carlos.mellado@outlook.com" }).Result;
                     var updateLocationModel = new { vehicle = new { vehicleId = "AAA-AAA" }, locations = new object[] { new { latitud = $"{latitud}", longitud = $"{longitud}" } } };
-                    HttpResponseMessage result = httpClient.PostAsJsonAsync($"{uriWebHooksApis}/api/vehicle/updatelocation", updateLocationModel).Result;
+                    result = httpClient.PostAsJsonAsync($"{uriWebHooksApis}/api/vehicle/updatelocation", updateLocationModel).Result;
                     Console.WriteLine("StatusCode: {0}, Content: {1}", result.StatusCode, result.Content.ReadAsStringAsync().Result);
                     latitud += 0.0000100m;
                     longitud += 0.0000100m;

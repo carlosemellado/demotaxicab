@@ -140,6 +140,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\TaxyCabDb2.ldf">
+      <DependentUpon>TaxyCabDb2.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\TaxyCabDb2.mdf" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -166,9 +170,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\TaxiCab-SlqReporsitory\TaxiCab-SlqReporsitory.csproj">
       <Project>{90ee42a4-1be4-4c5a-912e-5dc2a336323b}</Project>

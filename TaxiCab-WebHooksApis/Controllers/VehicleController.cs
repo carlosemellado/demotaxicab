@@ -24,8 +24,8 @@ namespace TaxiCab_WebHooksApi.Controllers
         public HttpResponseMessage UpdateLocation(UpdateLocationModel request)
         {
             var result = this.NotifyAllAsync(request.vehicle.vehicleId, new { Message = request } );
-            
-            return Request.CreateResponse(HttpStatusCode.OK, request);
+            repository.UpdateLocation(request);
+            return Request.CreateResponse(HttpStatusCode.OK, repository.UpdateLocation(request));
         }
 
 

@@ -24,6 +24,7 @@ namespace TaxiCab_WebHooksApi.Controllers
         [HttpPost()]
         public HttpResponseMessage RequestJourney(RequestJourneyModel request) {
 
+            // TODO : implement call to repository
             return Request.CreateResponse(HttpStatusCode.OK, repository.RequestJourney(request));
 
         }
@@ -32,6 +33,7 @@ namespace TaxiCab_WebHooksApi.Controllers
         [HttpPost()]
         public HttpResponseMessage AcceptJourney(AcceptJourneyModel request)
         {
+            // TODO : implement call to repository
             return Request.CreateResponse(HttpStatusCode.OK, repository.AcceptJourney(request));
         }
 
