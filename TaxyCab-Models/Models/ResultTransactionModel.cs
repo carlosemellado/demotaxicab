@@ -7,7 +7,7 @@ namespace TaxiCab_WebHooksApi.Models
 {
     public class ResultTransactionModel
     {
-        public int numAffactedRows { get; set; }
+        public int? numAffactedRows { get; set; }
         public string Description { get; set; }
     }
 }

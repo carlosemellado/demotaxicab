@@ -9,5 +9,7 @@ namespace TaxiCab_WebHooksApi.Repository
     public interface ITaxiCabVehicleRepository
     {
         ResultTransactionModel UpdateLocation(UpdateLocationModel model);
+
+        ResultTransactionModel GetLocations(Vehicle vehicle, out GetLocationModel model);
     }
 }

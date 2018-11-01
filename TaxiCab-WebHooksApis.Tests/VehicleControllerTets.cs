@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TaxiCab_WebHooksApi.Controllers;
 using TaxiCab_WebHooksApi.Models;
@@ -37,7 +39,22 @@ namespace TaxiCab_WebHooksApi.Tests
                 }
             };
             VahicleController autenticationController = new VahicleController(repository);
+            autenticationController.Request = new HttpRequestMessage();
+            autenticationController.Request.SetConfiguration(new HttpConfiguration());
             var result = autenticationController.UpdateLocation(updateLocationModel);
+
+        }
+
+
+        [TestMethod]
+        public void GetLocationsTest()
+        {
+            var updateLocationModel = new GetLocationModel
+            {
+                vehicle = new Vehicle { vehicleId = "XXX-XXX" }
+            };
+            VahicleController autenticationController = new VahicleController(repository);
+            var result = autenticationController.GetLocations(updateLocationModel);
 
         }
     }

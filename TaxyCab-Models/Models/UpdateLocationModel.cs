@@ -9,4 +9,13 @@ namespace TaxiCab_WebHooksApi.Models
         public List<Location> locations { get; set; }
 
     }
+
+
+    public class GetLocationModel
+    {
+        public Vehicle vehicle { get; set; }
+
+        public List<Location> locations { get; set; }
+
+    }
 }

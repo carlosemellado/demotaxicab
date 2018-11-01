@@ -19,16 +19,20 @@ namespace TaxiCab_WebHooksApi.Controllers
         public VahicleController(ITaxiCabVehicleRepository repository) {
             this.repository = repository;
         }
-
+        [HttpPost]
         [Route("api/vehicle/updatelocation")]
         public HttpResponseMessage UpdateLocation(UpdateLocationModel request)
         {
             var result = this.NotifyAllAsync(request.vehicle.vehicleId, new { Message = request } );
-            repository.UpdateLocation(request);
             return Request.CreateResponse(HttpStatusCode.OK, repository.UpdateLocation(request));
         }
-
-
+        [HttpPost]
+        [Route("api/vehicle/getlocations")]
+        [HttpGet]
+        public HttpResponseMessage GetLocations(GetLocationModel request)
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, repository.GetLocations(request.vehicle,out request));
+        }
     }
 
 
