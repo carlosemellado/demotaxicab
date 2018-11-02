@@ -106,7 +106,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Imagenes\autorize.PNG" />
+    <Content Include="Imagenes\configuracion.PNG" />
+    <Content Include="Imagenes\configuracion2.PNG" />
     <Content Include="Imagenes\conn.PNG" />
+    <Content Include="Imagenes\Demo.PNG" />
     <Content Include="Imagenes\dependecyinjection.PNG" />
     <Content Include="Imagenes\panic.PNG" />
     <Content Include="Imagenes\TaxiCab.PNG" />

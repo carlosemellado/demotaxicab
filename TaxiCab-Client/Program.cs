@@ -25,8 +25,10 @@ namespace TaxiCab_NotificationService
             using (WebApp.Start<Startup>(uriClient))
             using (var httpClient = new HttpClient())
             {
-                Console.WriteLine("Press any key to register 1");
+                Console.WriteLine("Press any key to start to recieve locations.");
                 Console.ReadKey();
+                Console.WriteLine("Wait 10 seconds.");
+                System.Threading.Thread.Sleep(10000);
 
                 var result = httpClient.PostAsJsonAsync($"{uriWebHooksApis}/api/journey/auth/signin", new { name="carlos.mellado@outlook.com" }).Result;
 
