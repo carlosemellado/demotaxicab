@@ -107,7 +107,7 @@
   <ItemGroup>
     <Content Include="Imagenes\autorize.PNG" />
     <Content Include="Imagenes\conn.PNG" />
-    <Content Include="Imagenes\dependecy injection.PNG" />
+    <Content Include="Imagenes\dependecyinjection.PNG" />
     <Content Include="Imagenes\panic.PNG" />
     <Content Include="Imagenes\TaxiCab.PNG" />
     <Content Include="Imagenes\vehiclecontroller.PNG" />
