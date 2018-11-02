@@ -27,15 +27,6 @@ namespace TaxiCab_WebHooksApi.Controllers
             var result = this.NotifyAsync(TaxiCabUtil.VEHICLELOCATION, new { Message = request } );
             return Request.CreateResponse(HttpStatusCode.OK, repository.UpdateLocation(request));
         }
-        [HttpPost]
-        [Route("api/vehicle/gethistorylocations")]
-        [HttpGet]
-        public HttpResponseMessage GetLocations(GetLocationModel request)
-        {
-            var resultado = repository.GetLocations(request.vehicle, out request);
-
-            return Request.CreateResponse(HttpStatusCode.OK, new { resultado= resultado, data = request });
-        }
 
 
         [HttpPost]
@@ -48,6 +39,21 @@ namespace TaxiCab_WebHooksApi.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, new { resultado = resultado, data = request });
         }
 
+
+
+
+        [HttpPost]
+        [Route("api/vehicle/gethistorylocations")]
+        [HttpGet]
+        public HttpResponseMessage GetLocations(GetLocationModel request)
+        {
+            var resultado = repository.GetLocations(request.vehicle, out request);
+
+            return Request.CreateResponse(HttpStatusCode.OK, new { resultado= resultado, data = request });
+        }
+
+
+        
 
        
     }

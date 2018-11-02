@@ -105,6 +105,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Imagenes\autorize.PNG" />
+    <Content Include="Imagenes\dependecy injection.PNG" />
+    <Content Include="Imagenes\vehiclecontroller.PNG" />
+    <Content Include="Imagenes\webconfig.PNG" />
     <Content Include="TaxiCab.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
